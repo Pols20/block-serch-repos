@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style type="text/css">
+         .error-input {
+         color: red;
+         }
+      </style>
+      <title>Document</title>
+   </head>
+   <body>
+      <main class="content">
+         <h1>Поиск репозиториев</h1>
+         <div class="search">
+            <form class="form-search" name="search">
+               <div class="form-inputs">
+                  <input type="text" placeholder="Поиск (3-32 символа)" 
+                     id="searchString" name="searchString" required tabindex="1">
+               </div>
+               <div class="form-inputs">
+                  <label for="searchMeaning" class="form-search__label">Поиск по:</label>
+                  <select tabindex="2" name="searchMeaning" id="searchMeaning" class="qualifier">
+                     <option value="all">Все</option>
+                     <option value="name">Название</option>
+                     <option value="description">Описание</option>
+                  </select>
+               </div>
+               <div class="form-inputs">
+                  <button type="submit" tabindex="2">Поиск</button>
+               </div>
+            </form>
+         </div>
+         <div class="repos">
+            <ul>
+            </ul>
+         </div>
+      </main>
+      <script src="script.js"></script>
+   </body>
+</html>
